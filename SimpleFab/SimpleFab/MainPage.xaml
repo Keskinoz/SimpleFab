@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SimpleFab"
+             x:Class="SimpleFab.MainPage">
+
+    <StackLayout >
+        <Label Text="YOUR CODE" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        <RelativeLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <ImageButton Source="chat.png"
+                     Clicked="OnFabMenuClick"
+                     WidthRequest="80"
+                     HeightRequest="80"
+                     Style="{StaticResource FABPrimary}" 
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Width, Factor=1, Constant=-100}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=1, Constant=-100}" />
+
+            <!-- other content goes here -->
+            <!--<RelativeLayout >
+            <Button x:Name="yourname" Image="chat.png"
+
+                    Clicked="OnFabMenuClick" IsVisible="True"
+                    WidthRequest="80"
+                    HeightRequest="80"
+                    Style="{StaticResource FABPrimary}" 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Width, Factor=1, Constant=-90}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+            Property=Height, Factor=1, Constant=-90}" 
+                        />-->
+
+
+
+
+        </RelativeLayout>
+    </StackLayout>
+</ContentPage>

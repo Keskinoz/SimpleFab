@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleFab.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkButtonBackground">#00FF00</Color>
+            <Style x:Key="FABPrimary" TargetType="ImageButton">
+                <Setter Property="CornerRadius" Value="100"/>
+                <Setter Property="Scale" Value="0.8"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource DarkButtonBackground}"/>
+
+                <Setter Property="Padding" Value="15"/>
+            </Style>
+                <!--
+                <Setter Property="Margin" Value="0,0,0,15"/>-->
+            <!--<Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>-->
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
